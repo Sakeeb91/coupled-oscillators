@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Dashboard: asymmetric</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .plot-section { margin-bottom: 30px; border: 1px solid #ddd; padding: 20px; border-radius: 5px; }
+        .plot-img { max-width: 100%; height: auto; margin-bottom: 10px; }
+        .plot-caption { font-style: italic; color: #666; }
+        .params { display: flex; flex-wrap: wrap; }
+        .param-block { flex: 1; min-width: 300px; margin-right: 20px; }
+        h1, h2, h3 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Simulation Dashboard: asymmetric</h1>
+            <p><strong>Run Date and Time:</strong> 2025-04-04_19-27-13</p>
+            <p><strong>Description:</strong> Asymmetric coupling where one oscillator inhibits the other more strongly. Expected to show more complex phase relationships and potential driving behavior.</p>
+
+        </div>
+        
+        <h2>Parameters</h2>
+        <div class="params">
+            <div class="param-block">
+                <h3>Oscillator 1</h3>
+                <ul>
+        <li>a: 5.0</li>
+<li>A: 1.0</li>
+<li>b: 0.1</li>
+<li>alpha: 0.2</li>
+<li>beta: 0.02</li>
+<li>k_self: 0.05</li>
+
+                </ul>
+            </div>
+            
+            <div class="param-block">
+                <h3>Oscillator 2</h3>
+                <ul>
+        <li>a: 5.0</li>
+<li>A: 1.0</li>
+<li>b: 0.1</li>
+<li>alpha: 0.2</li>
+<li>beta: 0.02</li>
+<li>k_self: 0.05</li>
+
+                </ul>
+            </div>
+            
+            <div class="param-block">
+                <h3>Coupling</h3>
+                <ul>
+                    <li>k12 (Repression of Osc1 by Osc2): 0.03</li>
+                    <li>k21 (Repression of Osc2 by Osc1): 0.01</li>
+                </ul>
+                
+                <h3>Stability Analysis</h3>
+                <ul>
+                    <li>k11*k22 - k12*k21 = 0.002200</li>
+                    <li>Predicted stability: Stable</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Results</h2>
+        
+        <div class="plot-section">
+            <h3>Time Series and Phase Portraits</h3>
+            <img src="time_series.png" class="plot-img">
+            <p class="plot-caption">Top: mRNA concentrations over time. Middle: Protein concentrations over time. Bottom: Phase portraits of both oscillators showing the relationship between mRNA and protein concentrations for each oscillator.</p>
+        </div>
+            
+        <div class="plot-section">
+            <h3>Comparative Phase Portraits</h3>
+            <img src="phase_comparison.png" class="plot-img">
+            <p class="plot-caption">Left: Relationship between mRNA levels of both oscillators. Right: Relationship between protein levels of both oscillators. These plots help visualize phase relationships and synchronization between the oscillators.</p>
+        </div>
+            
+        <div class="plot-section">
+            <h3>Phase Difference</h3>
+            <img src="phase_difference.png" class="plot-img">
+            <p class="plot-caption">The difference in phase between the two oscillators over time. A constant phase difference indicates phase locking, while a changing difference indicates phase drift.</p>
+        </div>
+            
+    </div>
+</body>
+</html>
+        
