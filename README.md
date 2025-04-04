@@ -35,6 +35,8 @@ The model is based on coupled negative feedback loops, a motif frequently found 
 - Genetic toggle switches
 - Synthetic biology circuits
 
+The mathematical framework is directly inspired by B.C. Goodwin's pioneering work in his seminal book "Temporal Organization in Cells" (1963), which was one of the first to formalize oscillatory behavior in genetic regulatory networks.
+
 The key finding is that stability depends on the relationship between self-inhibition and cross-inhibition strengths, following the mathematical condition:
 
 ```
@@ -133,6 +135,10 @@ This project demonstrates:
 - Additional coupling architectures (activation, enzymatic)
 - 3D visualization of parameter space stability regions
 
+## 📚 References
+
+1. Goodwin, B.C. (1963). *Temporal Organization in Cells: A Dynamic Theory of Cellular Control Processes*. Academic Press, London.
+
 ---
 
-*This project was developed as part of computational biology research on coupled genetic oscillatory systems.* 
+*This project was developed as part of computational biology research on coupled genetic oscillatory systems, inspired by the pioneering work of B.C. Goodwin.* 
